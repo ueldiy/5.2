@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #2a2a2a;
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        margin: 10px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        background-color: #757575;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>Л. Толстой</button>
+    <button>В. Голобородько</button>
+    <button>М. Гоголь</button>
+    <button>О. Пахльовська</button>
+    <button>І. Репін</button>
+    <script>
+      const quotes = [
+          "Я дуже люблю народну українсь-ку мову, звучну, барвисту й таку м'я-ку.",
+          "Мова вмирає, коли наступне покоління втрачає розуміння значення слів.",
+          "М. Гоголь Дивуєшся дорогоцінності мови нашої: в ній що не звук, то подарунок, все крупно, зернисто, як самі перла.",
+          "Раби — це нація, котра не має Слова. Тому й не зможе захистить себе.",
+          "Відчуваю й усвідомлюю, яка це красива й легка українська мова.",
+      ];
+      document.querySelectorAll("button").forEach((el, i) => {
+        el.onclick = () => alert(quotes[i]);
+      });
+    </script>
+  </body>
+</html>
